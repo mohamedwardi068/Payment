@@ -1,6 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
 import { ShoppingCart } from "lucide-react";
 import { useCart } from "@/context/CartContext";
+import logo from "@/logo/logohead.png";
 
 export function Header() {
   const { itemCount } = useCart();
@@ -10,15 +11,15 @@ export function Header() {
     <header className="sticky top-0 z-50 w-full border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center justify-between">
         <Link to="/" className="flex items-center space-x-2">
-          <span className="text-xl font-bold text-foreground">Checkout</span>
+          <img src={logo} alt="Logo" className="w-16 object-contain mt-2" />
+          <span className="text-xl font-bold text-blue-600">payFlow</span>
         </Link>
 
         <nav className="flex items-center space-x-6">
           <Link
             to="/"
-            className={`text-sm font-medium transition-colors hover:text-primary ${
-              location.pathname === "/" ? "text-primary" : "text-muted-foreground"
-            }`}
+            className={`text-sm font-medium transition-colors hover:text-primary ${location.pathname === "/" ? "text-primary" : "text-muted-foreground"
+              }`}
           >
             Products
           </Link>
