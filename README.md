@@ -46,12 +46,14 @@ A modern, responsive e-commerce checkout frontend built with React and Tailwind 
    npm run dev
    ```
 
-## 🖥️ Admin Interface
+## 🖥️ Admin Access
 
-To access the admin dashboard, navigate to:
-`http://localhost:5173/admin/orders` (or your deployed URL /admin/orders).
+Since this is a portfolio project with no authentication currently implemented, you can access the order management dashboard directly via the following URL:
+
+- **Local**: `http://localhost:5173/admin/orders`
+- **Production**: `[Your-Deployed-URL]/admin/orders`
 
 ### Admin Capabilities:
-- View all orders in a dashboard-style card layout.
-- Check order details and payment information.
-- Trigger refunds for "Paid" orders.
+- **Order Monitoring**: View all guest orders in a modern card-based layout.
+- **Detailed View**: Access full order history, item breakdowns, and payment IDs.
+- **Refund Management**: One-click refund processing for any "Paid" order.
